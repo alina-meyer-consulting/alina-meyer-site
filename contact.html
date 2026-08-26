@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Alina Meyer Consulting</title>
+<meta name="description" content="Get in touch with Alina Meyer for coaching, workshops, and speaking availability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<style>body{display:flex; flex-direction:column; min-height:100vh}</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__brand">Alina Meyer</a>
+  <div class="nav__links">
+    <a href="about.html">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#testimonials">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="contact-page">
+  <div class="contact-page__inner">
+    <div class="eyebrow">Get in touch</div>
+    <h1>Let's talk it through.</h1>
+    <p>Email me here for information and availability.</p>
+    <div class="contact-actions">
+      <a href="mailto:info@alinameyerconsulting.com" class="btn btn--lg">info@alinameyerconsulting.com</a>
+      <button class="btn--outline" id="copy-email">Copy email</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 Alina Meyer Consulting</div>
+  <div class="footer__links">
+    <a href="about.html">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy-email').addEventListener('click', function(btn){
+  navigator.clipboard.writeText('info@alinameyerconsulting.com');
+  var el = document.getElementById('copy-email');
+  el.textContent = 'Copied ✓';
+  setTimeout(function(){ el.textContent = 'Copy email'; }, 2000);
+});
+</script>
+
+</body>
+</html>
