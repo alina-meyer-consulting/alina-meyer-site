@@ -69,12 +69,29 @@ ul {
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
 }
+.nav__brand-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .nav__brand {
   font-family: "Fraunces", Georgia, serif;
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: var(--text);
+}
+
+.subtitle {
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: var(--text);
+  opacity: 0.65;
+  margin: 0;
+  white-space: nowrap;
 }
 .nav__links {
   display: flex;
@@ -96,10 +113,14 @@ ul {
 
 /* SHARED */
 .eyebrow {
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--accent);
+}
+
+#main-title {
+  font-size: 24px;
 }
 .btn {
   display: inline-block;
@@ -209,6 +230,16 @@ ul {
   color: var(--muted);
   max-width: 620px;
   margin: 0 0 20px;
+}
+
+.about__grid--text-only {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.about__grid--text-only > div {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* TESTIMONIAL (excerpt, home) */
