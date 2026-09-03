@@ -71,13 +71,26 @@ ul {
 }
 .nav__brand-group {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__logo {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.nav__brand-text {
+  display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
 .nav__brand {
   font-family: "Fraunces", Georgia, serif;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: var(--text);
@@ -85,7 +98,7 @@ ul {
 
 .subtitle {
   font-family: "Jost", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.3px;
   color: var(--text);
@@ -204,6 +217,13 @@ ul {
 }
 .hero .photo {
   background-color: var(--bg);
+}
+.hero p.hero__note {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 420px;
+  margin: 26px 0 0;
 }
 
 /* ABOUT (home) */
